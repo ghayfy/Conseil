@@ -2,10 +2,10 @@
 
 .titre {
   position: relative;
-  font-weight: 800;
+  font-weight: 500;
   display: inline-block;
   max-width: 783px;
-  font-size: 80px;
+  font-size: 75px;
 }
 .texte-accroche {
   font-weight: 300;
@@ -108,7 +108,7 @@
   padding: var(--padding-5xl) 0;
   align-items: center;
   justify-content: flex-start;
-  gap: 87px;
+  gap: -10px;
   background-image: url(./public/headingframe@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
