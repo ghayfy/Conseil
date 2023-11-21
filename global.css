@@ -182,34 +182,34 @@ div.menu a:hover {
 .termes-et-conditions {
   margin: 0;
 }
-.termes-et-conditions-container {
-  position: relative;
+.termes-et-conditions {
   font-size: var(--font-size-base);
-  line-height: 245.1%;
   font-weight: 500;
-  text-align: right;
+  color: var(--color-gray-100);
+  text-align: center;
+  line-height: 1.5; /* Ajustez la hauteur de ligne selon vos préférences */
+
 }
 .footercontent {
   align-self: stretch;
   display: flex;
-  flex-direction: row;
-  padding: var(--padding-27xl) 0;
+  flex-direction: column;
+  padding: 0;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: var(--gap-sm);
 }
 
 .ai-marketing-droits {
-  position: relative;
-  font-size: var(--font-size-sm);
-  line-height: 245.1%;
+  font-size: var(--font-size-base);
   font-weight: 500;
   color: var(--color-gray-100);
   text-align: center;
+  line-height: 1.5; /* Ajustez la hauteur de ligne selon vos préférences */
 }
 
 .ai-marketing-droits::before {
-  content: '© ' var(--nom-marque)
+  content: '© ' var(--nom-marque);
 }
 
 #footer {
@@ -217,8 +217,8 @@ div.menu a:hover {
   flex-direction: column;
   align-self: stretch;
   background-color: #dbdbdb;
-  padding: var(--padding-lg) var(--padding-21xl);
-  align-items: flex-start;
+  padding: var(--padding-mini);
+  align-items: center;
   justify-content: center;
   gap: var(--gap-3xs);
 }
@@ -248,10 +248,10 @@ div.menu a:hover {
 
 @media screen and (max-width: 620px) {
   .logo {
-    flex-direction: row;
+    flex-direction: column;
     gap: var(--gap-mini);
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center; /* Changez vers "center" pour centrer le logo */
     flex: unset;
     align-self: stretch;
   }
@@ -267,8 +267,28 @@ div.menu a:hover {
   }
 }
 
+
 @media screen and (max-width: 960px) {
   .ai-marketing {
     font-size: var(--font-size-xl);
   }
 }
+/* Ajoutez ces styles pour ajuster la disposition du texte du footer en mode téléphone */
+@media screen and (max-width: 767px) {
+  #footer {
+    padding: var(--padding-mini); /* Ajustez l'espacement intérieur du footer selon vos préférences */
+    text-align: center; /* Centre le texte du footer */
+  }
+
+  .footercontent,
+
+
+  .termes-et-conditions-container {
+    text-align: center; /* Centre le texte dans la section termes-et-conditions */
+  }
+
+  .ai-marketing-droits {
+    text-align: center; /* Centre le texte dans la section ai-marketing-droits */
+  }
+}
+
