@@ -28,4 +28,5 @@ document.getElementById("footer").innerHTML=`
 tous droits réservés 2023
 </div>`;
 
-};
+}; 
+
