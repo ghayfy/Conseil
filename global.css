@@ -192,6 +192,7 @@ div.menu a:hover {
 .termes-et-conditions,
 .politique-de-confidentialite {
   color: white;
+  font-size: 14px; /* Vous pouvez ajuster la taille du texte selon vos préférences */
 }
 
 .footercontent {
