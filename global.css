@@ -188,8 +188,12 @@ div.menu a:hover {
   color: var(--color-gray-100);
   text-align: center;
   line-height: 1.5; /* Ajustez la hauteur de ligne selon vos préférences */
-
 }
+.termes-et-conditions,
+.politique-de-confidentialite {
+  color: white;
+}
+
 .footercontent {
   align-self: stretch;
   display: flex;
