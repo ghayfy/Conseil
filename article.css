@@ -167,8 +167,8 @@ div.contenu p {
   /* Styles spécifiques au mode responsive pour les écrans de téléphone */
   div.contenu p, li {
     font-size: 15px;
-    margin-left: 20px; /* Ajoutez une marge à gauche */
-    margin-right: 10px; /* Ajoutez une marge à droite */
+    margin-left: 25px; /* Ajoutez une marge à gauche */
+    margin-right: 25px; /* Ajoutez une marge à droite */
   }
   h1.titre-article {
     font-size: 30px; /* Ajustez la taille de la police pour le titre h1 */
@@ -178,13 +178,16 @@ div.contenu p {
   h2 {
     font-size: 22px; /* Ajustez la taille de la police pour les titres h2 */
     margin-top: 40px; /* Ajustez la marge supérieure */
-    margin-left: 20px; /* Ajoutez une marge à gauche */
+    margin-left: 25px; /* Ajoutez une marge à gauche */
+    margin-right: 25px; /* Ajoutez une marge à droite */
   }
 
   h3 {
     font-size: 16px; /* Ajustez la taille de la police pour les titres h3 */
     margin-top: 25px; /* Ajustez la marge supérieure */
-    margin-left: 20px; /* Ajoutez une marge à gauche */
+    margin-left: 25px; /* Ajoutez une marge à gauche */
+    margin-right: 25px; /* Ajoutez une marge à droite */
   }
 }
+
 
