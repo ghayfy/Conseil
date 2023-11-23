@@ -166,7 +166,7 @@ div.menu a:hover {
   color: var(--color-mediumslateblue);
 }
 
-.logo2 {
+/*.logo2 {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -176,7 +176,10 @@ div.menu a:hover {
 }
 
 .logo2 {
-  display: none; /* Ajoutez cette ligne pour masquer le logo dans le footer */
+  display: none;  /*Ajoutez cette ligne pour masquer le logo dans le footer
+}*/
+.logo2 .logo-image {
+  display: none; /* Masquer seulement l'image du logo dans le footer */
 }
 
 .termes-et-conditions {
@@ -189,9 +192,10 @@ div.menu a:hover {
   text-align: center;
   line-height: 1.5; /* Ajustez la hauteur de ligne selon vos préférences */
 }
+
 .termes-et-conditions,
 .politique-de-confidentialite {
-  color: white;
+  color: var(--color-gray-100); /* Changez la couleur en gris ou toute autre couleur visible */
   font-size: 14px; /* Vous pouvez ajuster la taille du texte selon vos préférences */
   font-weight: bold;
 }
@@ -249,7 +253,7 @@ a:visited {
 
 @media screen and (max-width: 580px) {
   .footercontent,
-  .logo2 {
+  /*.logo2 {
     align-items: center;
     justify-content: flex-start;
   }
@@ -258,7 +262,7 @@ a:visited {
     gap: var(--gap-mini);
     flex: unset;
     align-self: stretch;
-  }
+  }*/
   .footercontent {
     flex-direction: column;
     gap: var(--gap-21xl);
