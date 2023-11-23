@@ -234,6 +234,19 @@ div.menu a:hover {
   height: 42px;
 }
 
+a {
+  text-decoration: none; /* Supprime le surlignement par défaut */
+  color: inherit; /* Hérite la couleur du texte du parent */
+}
+
+a:hover {
+  text-decoration: none; /* Supprime le surlignement au survol */
+}
+
+a:visited {
+  text-decoration: none; /* Supprime le surlignement des liens visités */
+}
+
 @media screen and (max-width: 580px) {
   .footercontent,
   .logo2 {
