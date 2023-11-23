@@ -20,8 +20,12 @@ document.getElementById("footer").innerHTML=`
   <div class="marque"></div>
 </div>
 <div class="termes-et-conditions-container">
-  <p class="termes-et-conditions">Termes et conditions</p>
-  <p class="termes-et-conditions">Politique de confidentialité</p>
+<p class="termes-et-conditions">
+    <a href="termes-et-conditions.html" target="_self">Termes et conditions</a>
+</p>
+<p class="termes-et-conditions">
+    <a href="politique-de-confidentialite.html" target="_self">Politique de confidentialité</a>
+</p>
 </div>
 </div>
 <div class="ai-marketing-droits">
