@@ -10,14 +10,14 @@ window.onload = (event) => {
 <div class="menu">
 <a href="index.html#services" target="_self">SERVICES</a>
 <a href="article.html" target="_self">BLOG</a>
-<a href="a-propos.html" target="_self">A PROPOS</a>
+<a href="a-propos.html" target="_self">ABOUT</a>
 </div>`;
 
 document.getElementById("footer").innerHTML=`
 <div class="footercontent">
 <div class="logo2">
-  <div class="logo-image"></div>
-  <div class="marque"></div>
+  <div class="logo-image"
+  iv>
 </div>
 <div class="termes-et-conditions-container">
 <p class="termes-et-conditions">
