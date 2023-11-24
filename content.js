@@ -26,6 +26,10 @@ document.getElementById("footer").innerHTML=`
 <p class="termes-et-conditions">
     <a href="politique-de-confidentialite.html" target="_self">Politique de confidentialité</a>
 </p>
+<p class="termes-et-conditions">
+    <A>contact@taïqo.com</A>
+</p>
+
 </div>
 </div>
 <div class="ai-marketing-droits">
