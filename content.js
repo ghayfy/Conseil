@@ -9,8 +9,8 @@ window.onload = (event) => {
 </a>
 <div class="menu">
 <a href="index.html#services" target="_self">SERVICES</a>
-<a href="article.html" target="_self">BLOG</a>
-<a href="a-propos.html" target="_self">POV</a>
+<a href="article.html" target="_self">POV</a>
+<a href="a-propos.html" target="_self">ABOUT</a>
 </div>`;
 
 document.getElementById("footer").innerHTML=`

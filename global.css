@@ -210,7 +210,7 @@ div.menu a:hover {
   gap: var(--gap-sm);
 }
 
-.ai-marketing-droits {
+.taïqo-droits {
   font-size: var(--font-size-base);
   font-weight: 500;
   color: var(--color-gray-100);
@@ -218,7 +218,7 @@ div.menu a:hover {
   line-height: 1.5; /* Ajustez la hauteur de ligne selon vos préférences */
 }
 
-.ai-marketing-droits::before {
+.taïqo-droits::before {
   content: '© ' var(--nom-marque);
 }
 
@@ -292,7 +292,7 @@ a:visited {
 
 
 @media screen and (max-width: 960px) {
-  .ai-marketing {
+  .taïqo {
     font-size: var(--font-size-xl);
   }
 }
@@ -310,8 +310,8 @@ a:visited {
     text-align: center; /* Centre le texte dans la section termes-et-conditions */
   }
 
-  .ai-marketing-droits {
-    text-align: center; /* Centre le texte dans la section ai-marketing-droits */
+  .taïqo-droits {
+    text-align: center; /* Centre le texte dans la section taïqo-droits */
   }
 }
 
