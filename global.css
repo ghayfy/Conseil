@@ -182,10 +182,8 @@ div.menu a:hover {
   display: none; /* Masquer seulement l'image du logo dans le footer */
 }
 
-.termes-et-conditions {
-  margin: 0;
-}
-.termes-et-conditions {
+
+.mentions-legales {
   font-size: var(--font-size-base);
   font-weight: 500;
   color: var(--color-gray-100);
@@ -193,12 +191,6 @@ div.menu a:hover {
   line-height: 1.5; /* Ajustez la hauteur de ligne selon vos préférences */
 }
 
-.termes-et-conditions,
-.politique-de-confidentialite {
-  color: var(--color-gray-100); /* Changez la couleur en gris ou toute autre couleur visible */
-  font-size: 14px; /* Vous pouvez ajuster la taille du texte selon vos préférences */
-  font-weight: bold;
-}
 
 .footercontent {
   align-self: stretch;
@@ -306,8 +298,8 @@ a:visited {
   .footercontent,
 
 
-  .termes-et-conditions-container {
-    text-align: center; /* Centre le texte dans la section termes-et-conditions */
+  .mentions-legales-container {
+    text-align: center; /* Centre le texte dans la section mentions-legales */
   }
 
   .taïqo-droits {

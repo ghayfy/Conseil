@@ -8,9 +8,9 @@ window.onload = (event) => {
 <div class="marque"></div>
 </a>
 <div class="menu">
-<a href="index.html#services" target="_self">SERVICES</a>
-<a href="article.html" target="_self">POV</a>
-<a href="a-propos.html" target="_self">ABOUT</a>
+    <a href="index.html#services" target="_self">SERVICES</a>
+    <a href="article.html" target="_self">P.O.V</a>
+    <a href="a-propos.html" target="_self">ABOUT</a>
 </div>`;
 
 document.getElementById("footer").innerHTML=`
@@ -19,18 +19,15 @@ document.getElementById("footer").innerHTML=`
   <div class="logo-image"
   iv>
 </div>
-<div class="termes-et-conditions-container">
-<p class="termes-et-conditions">
-    <a href="termes-et-conditions.html" target="_self">Termes et conditions</a>
-</p>
-<p class="termes-et-conditions">
-    <a href="politique-de-confidentialite.html" target="_self">Politique de confidentialité</a>
+<div class="mentions-legales-container">
+    <p class="mentions-legales">
+    <a href="mentions-legales.html" target="_self">Mentions légales</a>
 </p>
 </div>
 </div>
 <div class="taïqo-droits">
-tous droits réservés 2023
+    Tous droits réservés 2023
 </div>`;
-
+document.getElementById("mentions-legales").style.fontSize = "16px"; // Remplacez "16px" par la taille de texte souhaitée.
 }; 
 
