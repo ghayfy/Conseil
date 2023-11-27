@@ -10,7 +10,7 @@ window.onload = (event) => {
 <div class="menu">
 <a href="index.html#services" target="_self">SERVICES</a>
 <a href="article.html" target="_self">BLOG</a>
-<a href="a-propos.html" target="_self">ABOUT</a>
+<a href="a-propos.html" target="_self">POV</a>
 </div>`;
 
 document.getElementById("footer").innerHTML=`
