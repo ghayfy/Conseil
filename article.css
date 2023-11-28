@@ -164,20 +164,27 @@ div.contenu p {
 
 @media only screen and (max-width: 767px) {
   /* Styles spécifiques au mode responsive pour les écrans de téléphone */
+  .contenu-a-propos {
+    max-width: 100% !important; /* Ajoutez cette ligne pour garantir une largeur maximale */
+    padding: 0 15px !important; /* Ajoutez une marge intérieure à gauche et à droite */
+  }
+
   .contenu-a-propos h1.titre-article,
   .contenu-a-propos h2,
   .contenu-a-propos h3 {
-    font-size: 18px; /* Ajustez la taille de la police pour les titres h1, h2, h3 */
-    margin-top: 30px; /* Augmentez la marge supérieure */
-    margin-bottom: 10px; /* Ajustez la marge inférieure si nécessaire */
+    font-size: 16px !important; /* Ajustez la taille de la police pour les titres h1, h2, h3 */
+    margin-top: 20px !important; /* Ajustez la marge supérieure */
+    margin-bottom: 8px !important; /* Ajustez la marge inférieure */
   }
 
   .contenu-a-propos p {
-    font-size: 14px; /* Ajustez la taille de la police pour les paragraphes */
-    margin-top: 20px; /* Augmentez la marge supérieure */
-    margin-bottom: 20px; /* Augmentez la marge inférieure si nécessaire */
+    font-size: 14px !important; /* Ajustez la taille de la police pour les paragraphes */
+    margin-top: 15px !important; /* Ajustez la marge supérieure */
+    margin-bottom: 15px !important; /* Ajustez la marge inférieure */
   }
 }
+
+
 
 
 
