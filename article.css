@@ -1,193 +1,106 @@
-
-
-div.contenu p, li {
-  font-size: var(--font-size-lg);
-  color: var(--color-slategray-100);
+/* Reset de la marge et du padding pour assurer une base cohérente */
+body, h1, h2, p, ul, li, table {
+  margin: 0;
+  padding: 0;
 }
 
+/* Style de base pour le corps de la page */
+body {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Styles pour la classe header-and-frame */
+.header-and-frame {
+  position: relative;
+}
+
+/* Styles pour la classe headingframe1 */
+.headingframe1 {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles pour l'image banniere-a-article */
+.banniere-a-article {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles pour la classe contenaire-article */
+.contenaire-article {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Styles pour la classe titre-article */
+.titre-article {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Styles pour la classe ligne-separation */
+.ligne-separation {
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+/* Styles pour la classe contenu-article */
+.contenu-article {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* Styles pour les titres h2 */
+h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styles pour les listes non ordonnées */
+ul {
+  list-style: none;
+}
+
+/* Styles pour les éléments de la liste */
+li {
+  margin-bottom: 10px;
+}
+
+/* Styles pour la classe table-container */
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+/* Styles pour le tableau */
 table {
+  width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 th, td {
   border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 th {
-  font-weight: 800;
-  background-color: #eaeff3;
+  background-color: #f2f2f2;
 }
 
-th, td {
-  padding: 15px;
-  font-size: 16px;
-  color: var(--color-slategray-100);
-}
-
-h2 {
-  font-size: 34px;
-  margin-top: 50px;
-}
-
-h3 {
-  font-size: 22px;
-  margin-top: 35px;
-}
-
-div.contenu a {
-  color: var(--color-slategray-100);
-  font-weight: 800;
-  text-decoration: none;
-}
-
-div.contenu a:hover {
-  opacity: 0.7;
-}
-
-ol {
-  margin: 0;
-}
-
-li {
-  margin-bottom: 35px;
-}
-
-div.contenu p {
-  margin-top: 10px;
-  margin-bottom: 0;
-  line-height: 1.5em;
-}
-
-.services3 {
-  position: relative;
-  line-height: 44px;
-}
-.headingframe2 {
-  align-self: stretch;
-  display: flex;
-  /*background-color: var(--color-black);*/
-  flex-direction: column;
-  padding: var(--padding-5xl) 0;
-  align-items: center;
-  justify-content: flex-start;
-}
-.titre-article {
-  /*align-self: stretch;*/
-  position: relative;
-  font-weight: 800;
-  display: flex;
-  max-width: 900px;
-  font-size: var(--font-size-23xl);
-  text-align: center;
-}
-.titre1 {
-  align-self: stretch;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-21xl) var(--padding-31xl);
-  align-items: center;
-  justify-content: flex-start;
-  font-size: var(--font-size-23xl);
-  color: var(--color-black);
-}
-.banniere-article {
-  max-width: 100%;
-  overflow: hidden;
-  height: 289px;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-.accroche,
-.banniere-article,
-.titre-paragraphe {
-  align-self: stretch;
-  position: relative;
-}
-.accroche {
-  font-size: var(--font-size-xl);
-}
-.titre-paragraphe {
-  line-height: 44px;
-  font-weight: 800;
-  display: flex;
-  align-items: flex-end;
-  height: 63px;
-  flex-shrink: 0;
-}
-.contenu-paragraphe {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-lg);
-  color: var(--color-slategray-100);
-}
-
-.contenu {
-  /*align-self: stretch;*/
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 51px var(--padding-31xl);
-  box-sizing: border-box;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 41px;
-  max-width: 900px;
-  font-size: var(--font-size-14xl);
-  color: var(--color-black);
-}
-
-@media screen and (max-width: 960px) {
-  .services3 {
-    font-size: var(--font-size-mini);
-  }
-
-  .titre1 {
-    font-size: var(--font-size-15xl);
-  }
-
-  .contenu {
-    font-size: var(--font-size-10xl);
-  }
-
-  .accroche {
-    font-size: var(--font-size-lg);
-  }
-
-  .contenu-paragraphe {
-    font-size: var(--font-size-base);
-  }
-}
-
-
-/* Vos styles CSS existants */
-
-@media only screen and (max-width: 767px) {
-  /* Styles spécifiques au mode responsive pour les écrans de téléphone */
-  div.contenu p, li {
-    font-size: 15px;
-    margin-left: 25px; /* Ajoutez une marge à gauche */
-    margin-right: 25px; /* Ajoutez une marge à droite */
-  }
-  h1.titre-article {
-    font-size: 30px; /* Ajustez la taille de la police pour le titre h1 */
-    margin-top: 40px; /* Ajustez la marge supérieure */
-  }
-
-  h2 {
-    font-size: 22px; /* Ajustez la taille de la police pour les titres h2 */
-    margin-top: 40px; /* Ajustez la marge supérieure */
-    margin-left: 25px; /* Ajoutez une marge à gauche */
-    margin-right: 25px; /* Ajoutez une marge à droite */
-  }
-
-  h3 {
-    font-size: 16px; /* Ajustez la taille de la police pour les titres h3 */
-    margin-top: 25px; /* Ajustez la marge supérieure */
-    margin-left: 25px; /* Ajoutez une marge à gauche */
-    margin-right: 25px; /* Ajoutez une marge à droite */
+/* Styles responsives pour les écrans étroits */
+@media only screen and (max-width: 600px) {
+  th, td {
+      font-size: 12px;
   }
 }
 
