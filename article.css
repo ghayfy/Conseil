@@ -161,34 +161,58 @@ div.contenu p {
   }
 }
 
+    .table-container {
+        overflow-x: auto;
+    }
 
-/* Vos styles CSS existants */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    /* Ajout de styles pour la responsivité */
+    @media only screen and (max-width: 600px) {
+        th, td {
+            font-size: 12px;
+        }
+    }
 
 @media only screen and (max-width: 767px) {
   /* Styles spécifiques au mode responsive pour les écrans de téléphone */
-  div.contenu p, li {
-    font-size: 15px;
-    margin-left: 25px; /* Ajoutez une marge à gauche */
-    margin-right: 25px; /* Ajoutez une marge à droite */
-  }
-  h1.titre-article {
-    font-size: 30px; /* Ajustez la taille de la police pour le titre h1 */
-    margin-top: 40px; /* Ajustez la marge supérieure */
+  .titre-article {
+    font-size: 25px; /* Ajustez la taille de la police pour le titre h1 */
+    margin-top: 30px; /* Ajustez la marge supérieure */
   }
 
-  h2 {
-    font-size: 22px; /* Ajustez la taille de la police pour les titres h2 */
-    margin-top: 40px; /* Ajustez la marge supérieure */
-    margin-left: 25px; /* Ajoutez une marge à gauche */
-    margin-right: 25px; /* Ajoutez une marge à droite */
+  .contenu-a-propos h2 {
+    font-size: 18px; /* Ajustez la taille de la police pour les titres h2 */
+    margin-top: 30px; /* Ajustez la marge supérieure */
+    margin-left: 15px; /* Ajoutez une marge à gauche */
+    margin-right: 15px; /* Ajoutez une marge à droite */
   }
 
-  h3 {
-    font-size: 16px; /* Ajustez la taille de la police pour les titres h3 */
-    margin-top: 25px; /* Ajustez la marge supérieure */
-    margin-left: 25px; /* Ajoutez une marge à gauche */
-    margin-right: 25px; /* Ajoutez une marge à droite */
+  .contenu-a-propos h3 {
+    font-size: 14px; /* Ajustez la taille de la police pour les titres h3 */
+    margin-top: 20px; /* Ajustez la marge supérieure */
+    margin-left: 15px; /* Ajoutez une marge à gauche */
+    margin-right: 15px; /* Ajoutez une marge à droite */
+  }
+
+  .contenu-a-propos p {
+    font-size: 14px;
+    margin-left: 15px; /* Ajoutez une marge à gauche */
+    margin-right: 15px; /* Ajoutez une marge à droite */
   }
 }
-
 
