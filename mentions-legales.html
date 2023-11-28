@@ -67,24 +67,41 @@
             color: #085e79;
         }
     
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            body {
-                font-size: 14px;
-            }
-    
-            header {
-                padding: 15px;
-            }
-    
-            section {
-                margin: 15px 0;
-            }
-    
-            footer {
-                padding: 5px;
-            }
-        }
+      /* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px;
+        flex-direction: column; /* Met le contenu en colonne */
+        align-items: center; /* Centre les éléments */
+        text-align: center; /* Centre le texte */
+    }
+
+    header img {
+        margin-bottom: 15px; /* Ajoute de l'espace en bas du logo */
+    }
+
+    nav {
+        text-align: center; /* Centre les liens du menu */
+        margin-top: 15px; /* Ajoute de l'espace au-dessus du menu */
+    }
+
+    nav a {
+        display: inline-block; /* Affiche les liens en ligne */
+        margin: 0 10px; /* Ajoute de l'espace de chaque côté des liens */
+    }
+
+    section {
+        margin: 15px 0;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
     </style>
     
 </head>
