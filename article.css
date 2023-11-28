@@ -161,58 +161,24 @@ div.contenu p {
   }
 }
 
-    .table-container {
-        overflow-x: auto;
-    }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
-
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-
-    th {
-        background-color: #f2f2f2;
-    }
-
-    /* Ajout de styles pour la responsivité */
-    @media only screen and (max-width: 600px) {
-        th, td {
-            font-size: 12px;
-        }
-    }
+/* Vos styles CSS existants */
 
 @media only screen and (max-width: 767px) {
   /* Styles spécifiques au mode responsive pour les écrans de téléphone */
-  .titre-article {
-    font-size: 25px; /* Ajustez la taille de la police pour le titre h1 */
-    margin-top: 30px; /* Ajustez la marge supérieure */
-  }
-
-  .contenu-a-propos h2 {
-    font-size: 18px; /* Ajustez la taille de la police pour les titres h2 */
-    margin-top: 30px; /* Ajustez la marge supérieure */
-    margin-left: 15px; /* Ajoutez une marge à gauche */
-    margin-right: 15px; /* Ajoutez une marge à droite */
-  }
-
+  .contenu-a-propos h1.titre-article,
+  .contenu-a-propos h2,
   .contenu-a-propos h3 {
-    font-size: 14px; /* Ajustez la taille de la police pour les titres h3 */
-    margin-top: 20px; /* Ajustez la marge supérieure */
-    margin-left: 15px; /* Ajoutez une marge à gauche */
-    margin-right: 15px; /* Ajoutez une marge à droite */
+    font-size: 18px; /* Ajustez la taille de la police pour les titres h1, h2, h3 */
+    margin-top: 15px; /* Ajustez la marge supérieure */
+    margin-bottom: 10px; /* Ajustez la marge inférieure si nécessaire */
   }
 
   .contenu-a-propos p {
-    font-size: 14px;
-    margin-left: 15px; /* Ajoutez une marge à gauche */
-    margin-right: 15px; /* Ajoutez une marge à droite */
+    font-size: 14px; /* Ajustez la taille de la police pour les paragraphes */
+    margin-top: 10px; /* Ajustez la marge supérieure */
+    margin-bottom: 10px; /* Ajustez la marge inférieure si nécessaire */
   }
 }
+
 
