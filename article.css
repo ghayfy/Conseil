@@ -162,23 +162,22 @@ div.contenu p {
 }
 
 
-/* Vos styles CSS existants */
-
 @media only screen and (max-width: 767px) {
   /* Styles spécifiques au mode responsive pour les écrans de téléphone */
   .contenu-a-propos h1.titre-article,
   .contenu-a-propos h2,
   .contenu-a-propos h3 {
     font-size: 18px; /* Ajustez la taille de la police pour les titres h1, h2, h3 */
-    margin-top: 15px; /* Ajustez la marge supérieure */
+    margin-top: 30px; /* Augmentez la marge supérieure */
     margin-bottom: 10px; /* Ajustez la marge inférieure si nécessaire */
   }
 
   .contenu-a-propos p {
     font-size: 14px; /* Ajustez la taille de la police pour les paragraphes */
-    margin-top: 10px; /* Ajustez la marge supérieure */
-    margin-bottom: 10px; /* Ajustez la marge inférieure si nécessaire */
+    margin-top: 20px; /* Augmentez la marge supérieure */
+    margin-bottom: 20px; /* Augmentez la marge inférieure si nécessaire */
   }
 }
+
 
 
