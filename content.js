@@ -9,7 +9,7 @@ window.onload = (event) => {
 </a>
 <div class="menu">
     <a href="index.html#services" target="_self">SERVICES</a>
-    <a href="article.html" target="_self">P.O.V</a>
+    <a href="pov.html" target="_self">P.O.V</a>
     <a href="a-propos.html" target="_self">ABOUT</a>
 </div>`;
 

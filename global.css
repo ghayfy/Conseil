@@ -15,7 +15,7 @@ body {
   text-align: left;
   font-size: var(--font-size-3xl);
   color: var(--color-white);
-    font-family: var(--font-manrope);
+  font-family: var(--font-manrope);
 }
 header {
   background-color: #ffffff; /* Fond blanc */
@@ -242,6 +242,7 @@ a:hover {
 a:visited {
   text-decoration: none; /* Supprime le surlignement des liens visités */
 }
+
 
 @media screen and (max-width: 580px) {
   .footercontent,
