@@ -43,11 +43,16 @@
             text-decoration: none;
             font-weight: bold; /* Ajoutez cette ligne pour mettre le texte en gras */
             font-size: 18px; /* Ajout de cette ligne pour ajuster la taille du texte */
+            
 }
 
         nav a:hover {
             /*background-color: #ddd;*/
             color: black;
+        }
+
+                nav.show {
+            display: flex;
         }
 
         .banner {
@@ -79,7 +84,7 @@
 
         .article-title {
             text-align: center;
-            font-size: 6px;
+            font-size: 60px;
             font-family: cursive, sans-serif; /* Utilisez une police manuscrite en priorité, puis une police de secours sans-serif */
             color: #085e79; /* Remplacez 'your_color' par la couleur que vous préférez */
 }
@@ -131,7 +136,10 @@
             bottom: 0;
             width: 100%;
             color: #085e79; /* Remplacez 'your_color' par la couleur que vous préférez */   
+            position: fixed; /* ou position: relative; */
+
         }
+       
         footer a {
             text-decoration: none; /* Supprime le soulignement des liens */
             color: inherit; /* Assure que la couleur du texte est héritée du parent (peut être ajusté selon vos préférences) */
