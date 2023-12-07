@@ -34,16 +34,38 @@
         margin: 0; /* Supprime la marge par défaut du titre */
     }
 
-    nav {
-        text-align: right;
-    }
 
-    nav a {
-        color: #ecf0f1;
-        text-decoration: none;
-        margin-left: 15px;
-        font-weight: bold;
-    }
+
+
+    nav {
+            background-color: #085e79;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Couleur au survol */
+        }
+
     
         h1, h2 {
             color: #085e79;
@@ -109,23 +131,25 @@
 <body>
     <header>
         <header>
-            <img src="public/logo-taiqo.png" alt="Logo TAÏQO">
+            <img src="public/logo.png" alt="Logo TAÏQO">
             <h1>Mentions Légales</h1>
-            <nav>
-                <a href="index.html">Accueil</a>
-                <a href="pov.html">P.O.V</a>
-                <a href="a-propos.html">About</a>
-            </nav>
+     
         </header>
     </header>
-
+    <nav>
+        <ul>
+            <a href="index.html">ACCUEIL</a>       
+            <a href="a-propos.html">À PROPOS</a>
+            <a href="pov.html">P.O.V</a>
+        </ul>
+    </nav>
     <section>
         <h2>Mentions Légales</h2>
         <p>
-            TAÏQO.com est édité par TAÏQO, une société enregistrée au registre du commerce sous le numéro [Numéro RCS] et dont le siège social est situé à Valence et Lyon.
+            TAÏQO.com est édité par TAÏQO, une société enregistrée au registre du commerce sous le numéro [Numéro RCS] et dont le siège social est situé à Lyon.
         </p>
         <p>
-            Numéro de téléphone : "à venir" - Adresse e-mail : contact@taiqo.com
+            Numéro de téléphone : "à venir" - Adresse e-mail : contact@taiqo.fr
         </p>
         <p>
             Directeur de la publication : Marjorie LEAUTHIER et Fabrice GUERET - Responsable éditorial : Marjorie LEAUTHIER et Fabrice GUERET

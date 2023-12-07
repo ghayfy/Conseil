@@ -1,0 +1,302 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Utilisez la police que vous souhaitez tester */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    color: #085e79;
+    padding: 400px; /* Ajustez la taille du de l'image de fond selon vos besoins */
+    text-align: center;
+    position: relative;
+}
+/* Ajustez la taille de la police pour le titre dans le header */
+.header h1 {
+    font-size: 66px; /* Ajustez la taille selon vos préférences */
+    margin-top: 160px; /* Déplace le bloc vers le bas de 220px */
+}
+
+/* Ajustez la taille de la police pour le slogan dans le header */
+.header p {
+    font-size: 25px; /* Ajustez la taille selon vos préférences */
+    margin-top: 60px; /* Déplace le bloc vers le bas de 220px */
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .banner img {
+    max-height: 400px; /* Ajustez la taille maximale selon vos besoins */
+    width: auto; /* Assure le redimensionnement proportionnel en fonction de la hauteur maximale */
+}
+
+
+.logo {
+    position: absolute;
+    top: -75px; /* Ajustez la marge supérieure selon vos besoins */
+    left: 0;
+    right: 0;
+    margin-left: auto; /* Centre le logo horizontalement */
+    margin-right: auto; /* Centre le logo horizontalement */
+}
+
+.logo img {
+    max-width: 300px; /* Ajustez la taille du logo selon vos besoins */
+    height: auto;
+}
+
+
+.contact-button-container {
+    margin-top: 50px;  /* Ajustez la valeur de margin-top selon vos besoins pour déplacer le bouton verticalement */
+}
+
+.contact-button {
+    background-color: #085e79;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 70px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none; /* Empêche le surlignement du lien */
+    display: inline-block; /* Permet d'appliquer le margin-top au conteneur */
+}
+
+.contact-button:hover {
+    background-color: #073f50; /* Changement de couleur au survol */
+}
+
+
+.check-icon {
+    position: relative;
+    width: 26px;
+    height: 30px;
+  }
+  
+  .avantage {
+    position: relative;
+    line-height: 1.5;
+  }
+  
+  .detail {
+    align-self: stretch;
+    display: flex;
+    align-items: center; /* Aligner les éléments au centre verticalement */
+    gap: 20px;
+  }
+  
+  .details {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 70px 17px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    font-size: 18px;
+    color: #333;
+    margin-top: 30px; /* Déplace le bloc vers le bas de 220px */
+    margin-left: auto; /* Centre le bloc horizontalement */
+    margin-right: auto; /* Centre le bloc horizontalement */
+} 
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.slogan {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+nav {
+    background-color: #085e79;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Couleur au survol */
+}
+
+section {
+    padding: 20px; /* Ajustez l'espacement interne selon vos besoins */
+    text-align: center;
+}
+
+h2 {
+    color: #085e79;
+}
+.titre-services {
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 50px; /* Ajustez la taille du texte selon vos préférences */
+}
+
+.block {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0px auto;
+    width: calc(33.333% - 10px);
+    display: inline-block;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: hidden;
+}
+
+.block:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+.block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.centered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    z-index: 1;
+}
+
+.block h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Pour s'assurer que le fond blanc ne dépasse pas le texte */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+.container a {
+    text-decoration: none;
+}
+.container {
+    text-align: center;
+    margin-left: 0px; /* Ajustez la marge à gauche selon vos besoins */
+}
+
+.block-container {
+    margin: 0 auto;
+    max-width: 900px; /* Ajustez selon vos besoins */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    /* Positionnement relatif au bas du contenu */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both; /* Assurez-vous qu'il n'y a pas de chevauchement avec le contenu ci-dessus */
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 160px;
+    }
+
+    .header h1 {
+        font-size: 15px;
+        margin-top: 60px;
+    }
+
+    .header p {
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    .logo img {
+        width: 120px; /* Ajustez la largeur du logo selon vos besoins */
+        height: auto; /* La hauteur est automatiquement ajustée pour maintenir les proportions de l'image */
+        margin-top: 50px; /* Ajustez la marge supérieure pour déplacer le logo vers le bas */
+    }
+
+    .contact-button {
+        font-size: 10px;
+        padding: 10px 25px;
+        transform: translateY(-30px); /* Utilisez une valeur négative pour déplacer vers le haut */
+    }
+
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 8px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .titre-services {
+        font-size: 25px;
+    }
+
+    .block {
+        width: calc(100% - 10px);
+        height: 150px;
+    }
+    .block h2 {
+        font-size: 20px; /* Ajustez la taille selon vos préférences */
+ 
+    }
+    
+    .details {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .block h2 {
+          font-size: 20px; /* Ajustez la taille selon vos préférences pour le mode responsive */
+        }
+      }
+      
+}
