@@ -47,18 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Réajuster la taille des titres lors du redimensionnement de la fenêtre
-  window.addEventListener("resize", function () {
-    adjustTitleSizes();
-  });
-  document.addEventListener('DOMContentLoaded', function () {
-    const burgerMenu = document.querySelector('.burger-menu');
-    const navLinks = document.querySelector('.nav-links');
 
-    burgerMenu.addEventListener('click', function () {
-        navLinks.classList.toggle('show');
-    });
-});
 
 document.addEventListener("DOMContentLoaded", function () {
     adjustTitleSizes(); // Appel initial pour ajuster les tailles au chargement de la page
@@ -94,16 +83,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Ajout d'une animation de survol pour les avantages
-const details = document.getElementById('details');
-const detailItems = details.querySelectorAll('.detail');
 
-detailItems.forEach(item => {
-    item.addEventListener('mouseover', () => {
-        item.style.transform = 'scale(1.1)';
-    });
 
-    item.addEventListener('mouseout', () => {
-        item.style.transform = 'scale(1)';
-    });
-});
+//partie formulaire de contact
+    function submitForm() {
+        // You can add your form submission logic here
+        // For demonstration purposes, let's display a success message
+        const formMessage = document.getElementById('formMessage');
+        formMessage.innerHTML = 'Votre message a été envoyé avec succès!';
+        formMessage.style.color = '#0a804a'; // Green color for success
+        resetForm();
+    }
+
+    function resetForm() {
+        // You can add logic to reset form fields if needed
+        document.getElementById('contactForm').reset();
+    }
+
+    $(document).ready(function() {
+      var timer = 4000;
+      var i = 0;
+      var max = $('#c > li').length;
+      
+  });
+  

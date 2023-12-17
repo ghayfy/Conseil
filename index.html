@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="script.js"></script>
     <title>TAÏQO</title>
 </head>
 <body>
 
     <header class="header" style="background-image: url('./public/headingframe@3x.png');"> 
         <div class="logo">
-            <img src="./public//logo.png" alt="Logo de TAÏQO">
+            <img src="./public/logo.png" alt="Logo de TAÏQO">
         </div>
         <div class="header-content">
             <h1 class="title">Innover pour exceller</h1>
@@ -54,7 +57,7 @@
     <h2 class="titre-services">Nos Services</h2>
        
     <div class="container">
-        <a href="#" id="strategie" class="block">
+        <a href="service-coaching.html" id="coaching" class="block">
             <img src="./public/service1@2x.png" alt="Stratégie">
             <div class="centered-title">
                 <h2>Coaching Professionnel</h2>
@@ -63,7 +66,7 @@
         </a>
     
     
-        <a href="#" id="crise" class="block">
+        <a href="service-strategie.html" id="strategie" class="block">
             <img src="./public/service2@2x.png" alt="Stratégie">
             <div class="centered-title">
                 <h2>Stratégie</h2>
@@ -71,7 +74,7 @@
             <!-- Ajoutez ici les détails sur l'accompagnement en gestion de crise -->
         </a>
     
-        <a href="#" id="reglementation" class="block">
+        <a href="service-organisation.html" id="organisation" class="block">
             <img src="./public/service3@2x.png" alt="Stratégie">
             <div class="centered-title">
                 <h2>Organisation</h2>
@@ -79,14 +82,14 @@
             <!-- Ajoutez ici les détails sur l'accompagnement en réglementation aéroportuaire -->
         </a>
     
-        <a href="#" id="organisation" class="block">
+        <a href="service-transformation.html" id="transformation" class="block">
             <img src="./public/service4@2x.png" alt="Stratégie">
             <div class="centered-title">
                 <h2>Transformation</h2>
             </div>
         </a>
     
-        <a href="#" id="transformation" class="block">
+        <a href="service-crise.html" id="Gestion de crise" class="block">
             <img src="./public/service5@2x.png" alt="Stratégie">
             <div class="centered-title">
                 <h2>Gestion de Crise</h2>
@@ -94,7 +97,7 @@
             <!-- Ajoutez ici les détails sur l'accompagnement en transformation -->
         </a>
     
-        <a href="#" id="coaching" class="block">
+        <a href="service-aeroportuaire.html" id="earoportuaire" class="block">
             <img src="./public/service6@2x.png" alt="Stratégie">
             <div class="centered-title">
                 <h2>Réglementation Aéroportuaire</h2>
@@ -103,33 +106,115 @@
         </a>
     </div>    
 
-<!-- ... Votre contenu existant ... -->
+   <!--   partie sloggan -->
+
+   <section class="features-section">
+    <div class="feature">
+        <img src="./public/logos/Performance.png" alt="Performance Logo">
+        <h2>Performance</h2>
+        <p>Suivi rigoureux des indicateurs pour une amélioration continue.</p>
+    </div>
+
+    <div class="feature">
+        <img src="./public/logos/Expertise.png" alt="Expertise Logo">
+        <h2>Expertise</h2>
+        <p>Professionnels qualifiés pour optimiser votre potentiel.</p>
+    </div>
+
+    <div class="feature">
+        <img src="./public/logos/Efficacite.png" alt="Efficacité Logo">
+        <h2>Efficacité</h2>
+        <p>Ressources optimisées pour des résultats mesurables.</p>
+    </div>
+
+    <div class="feature">
+        <img src="./public/logos/Rentabilite.png" alt="Rentabilité Logo">
+        <h2>Rentabilité</h2>
+        <p>Stratégies axées sur la croissance économique durable.</p>
+    </div>
+</section>
+
+
+
+
+<!-- Partie référence clients -->
+<h2 class="titre-services">Ils nous font confiance</h2>
+
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+            <img src="./public/logos/renault-trucks-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/caissedepargne-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/enedis-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/keolis-lyon-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/edf-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/ocea-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/panzani-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/adecco-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/renault-trucks-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/caissedepargne-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/enedis-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/keolis-lyon-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/edf-logo.png" height="100" width="250" alt="" />  
+        </div>
+        <div class="slide">
+            <img src="./public/logos/ocea-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/panzani-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="./public/logos/adecco-logo.png" height="100" width="250" alt="" />
+        </div>
+    </div>
+</div>
+
+
+<!-- ... Partie contact ... -->
 <section id="contact-form">
     <div class="contact-container">
         <h2>Contactez-nous</h2>
         <form id="contactForm" action="#" method="post">
             <div class="form-group">
-                <label for="name">Votre NOM et Prénom *</label>
-                <input type="text" id="name" name="name" placeholder="Entrez votre nom et prénom" required>
+                <input type="text" id="name" name="name" placeholder="Nom & Prénom" required autocomplete="name">
             </div>
 
             <div class="form-group">
-                <label for="company">Votre société *</label>
-                <input type="text" id="company" name="company" placeholder="Entrez le nom de votre société" required>
+                <input type="text" id="company" name="company" placeholder="Société" required autocomplete="organization">
             </div>
 
             <div class="form-group">
-                <label for="email">Votre e-mail *</label>
-                <input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+                <div class="grid">
+                    <input type="email" id="email" name="email" placeholder="E-mail" autocomplete="email" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Téléphone" autocomplete="tel">
+                </div>
             </div>
 
             <div class="form-group">
-                <label for="phone">Votre téléphone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone">
-            </div>
-
-            <div class="form-group">
-                <label for="subject">Votre demande concerne *</label>
                 <select id="subject" name="subject" required>
                     <option value="" disabled selected>Choisissez une option</option>
                     <option value="coaching">Coaching professionnel</option>
@@ -142,31 +227,22 @@
             </div>
 
             <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="Écrivez votre message ici"></textarea>
+                <textarea id="message" name="message" rows="4" placeholder="Votre message"></textarea>
             </div>
-
+            <div class="form-group">
+                <label for="agreeCheckbox" class="checkbox-label">
+                    <input type="checkbox" id="agreeCheckbox" name="agreeCheckbox" required>
+                    <span class="checkbox-text">En envoyant ce formulaire, j’accepte que les informations saisies soient utilisées par TAÏQO pour me recontacter, m’accompagner dans la réalisation de mon projet et m’informer de ses actualités. Je sais que je pourrai me désabonner à tout moment.<br>
+                    <a href="mentions-legales.html" style="text-decoration: none; font-weight: bold; color: #161d20;">En savoir plus sur le traitement de mes données</a>.</span>
+                </label>
+            </div>
+            
             <button type="button" onclick="submitForm()">Envoyer</button>
             <p id="formMessage"></p>
         </form>
     </div>
 </section>
 
-<script>
-    function submitForm() {
-        // You can add your form submission logic here
-        // For demonstration purposes, let's display a success message
-        const formMessage = document.getElementById('formMessage');
-        formMessage.innerHTML = 'Votre message a été envoyé avec succès!';
-        formMessage.style.color = '#0a804a'; // Green color for success
-        resetForm();
-    }
-
-    function resetForm() {
-        // You can add logic to reset form fields if needed
-        document.getElementById('contactForm').reset();
-    }
-</script>
 
 
 
@@ -184,15 +260,14 @@
 
     <div class="contact-info">
         <p>Email: contact@taiqo.fr</p>
-        <p>Téléphone: +33 123 456 789</p>
+        <p>&copy; 2023 Taïqo. Tous droits réservés.</p>
     </div>
 
-    <p>&copy; 2023 Taïqo. Tous droits réservés.</p>
+   
 </footer>
 
 <!-- Ajoutez le script Font Awesome (si nécessaire) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-<script src="script.js"></script>
+
 
 </body>
 </html>
