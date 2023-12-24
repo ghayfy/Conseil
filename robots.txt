@@ -1,0 +1,21 @@
+
+# Autoriser tous les robots à indexer toutes les parties du site
+User-agent: *
+Disallow: /private/
+Disallow: /test/
+Disallow: /tmp/
+Disallow: /logs/
+Disallow: /admin/
+Allow: /private/public-page.html
+Crawl-delay: 10
+User-agent: Googlebot
+# Spécifier l'emplacement du sitemap XML
+Sitemap: https://www.taiqo.fr/sitemap.xml
+# Désactiver l'indexation de certaines pages
+Disallow: /login/
+
+
+
+
+
+
