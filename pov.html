@@ -4,246 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./pov.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
         <script src="script.js"></script>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LE POINT DE VUE DE TAÏQO</title>
-    <link rel="stylesheet" href="./pov.css" />
-    <style>
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: white;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 120px; /* Ajustez la hauteur selon vos besoins */
-        }
-
-        header img {
-            width: 300px; /* Ajustez la largeur selon vos besoins */
-            height: auto; /* Cela permet de conserver les proportions originales du logo */
-        }
-
-
-        nav {
-            background-color: #085e79;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav li {
-            display: inline;
-            margin-right: 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #085e79; /* Couleur du texte dans la navigation */
-            background-color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s ease-in-out;
-            padding: 6px 11px;
-            border-radius: 5px;
-        }
-
-        nav a:hover {
-            background-color: #ffcc00;
-            color: #073f50;
-        }
- 
-
-        .banner {
-            width: 100%;
-            max-height: 200px;
-            overflow: hidden;
-        }
-
-        .banner img {
-            width: 100%;
-            max-height: 300px; /* Ajustez la hauteur maximale selon vos besoins */
-            object-fit: cover;
-        }
-
-        .article-container {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px;
-        }
-
-        .article {
-            flex: 0 0 48%;
-            box-sizing: border-box;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-bottom: 20px;
-            color: #085e79; /* Remplacez 'your_color' par la couleur que vous préférez */
-        }
-
-        .article-title {
-            text-align: center;
-            font-size: 40px;
-
-            color: #085e79; /* Remplacez 'your_color' par la couleur que vous préférez */
-}
-
-        .article img {
-            max-width: 100%;
-            max-height: 150px;
-            height: auto;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
-
-        .article:nth-child(even) img {
-            float: right;
-            margin-left: 10px;
-        }
-
-        .article:nth-child(odd) img {
-            float: left;
-            margin-right: 10px;
-        }
-
-        .read-more {
-            display: block;
-            text-align: right;
-            color: #420c4d;
-            text-decoration: none;
-        }
-
-        .read-more:hover {
-            text-decoration: underline;
-        }
-
-        
-        /* Nouveau style pour le footer */
-        footer {
-            background-color: #073f50;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer p {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        footer a {
-            text-decoration: none;
-            color: white;
-            margin: 0 15px;
-            transition: color 0.3s ease-in-out;
-        }
-
-        footer a:hover {
-            color: #ffcc00; /* Changement de couleur au survol */
-        }
-
-        .social-icons {
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 24px;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .social-icons a:hover {
-            color: #0e76a8 ; /* Changement de couleur au survol */
-        }
-
-
-        .contact-info {
-            margin-top: 20px;
-        }
-
-
-        @media only screen and (max-width: 600px) {
-
-            header img {
-                display: block;
-                margin: 0 auto; /* Centre le logo horizontalement */
-    }
-            nav {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                z-index: 1;
-            }
-
-            nav.show {
-                display: flex;
-            }
-
-     
-            nav a {
-                float: none;
-                width: 100%;
-                box-sizing: border-box;
-            }
-            footer {
-                padding: 10px;
-            }
-            footer p {
-                font-size: 12px;
-                margin-bottom: 10px;
-                }
-                footer {
-                font-size: 12px;
-                }
-
-            
-            header img {
-                display: block;
-                margin: 0 auto; /* Centre le logo horizontalement */
-            }
-
-
-
-}
-
-      /* Media query pour les écrans de 1280px x 802px */
-      @media (min-width: 1280px) and (max-height: 802px) {
-   
-            }
-            footer {
-                font-size: 13px;
-                width: 97%;
-            }
-
-    </style>
+        <title>LE POINT DE VUE DE TAÏQO</title>
+    <head>
 
 <script>
     function toggleNav() {
@@ -251,8 +16,6 @@
         nav.classList.toggle('show');
     }
 </script>
-
-</head>
 
 <body>
     <header>
@@ -276,13 +39,13 @@
         <div class="article">
             <img src="./public/coaching2.png" alt="Article 1">
             <p>Le <b>coaching professionnel</b>, levier de succès, s'étend aujourd'hui à toutes les sphères de la vie. Devenu bien plus qu'un outil réservé à l'élite, il guide chacun vers l'épanouissement. Plongeons dans cet univers dynamique où le coaching redéfinit le succès, catalysant des destinées et transcendant les limites. Une démarche proactive d'épanouissement où chaque étape devient une avancée vers une version améliorée de soi-même. Le coaching professionnel, partenaire essentiel dans la quête de l'excellence, forge des succès authentiques à tous niveaux.</p>
-            <a class="read-more" href="coaching.html">Lire l'article complet</a>
+            <a class="read-more" href="coaching.html">Lire l'article</a>
         </div>
 
         <div class="article">
             <img src="./public/strategie.png" alt="Article 2">
             <p>Dans le tumulte incessant du monde des affaires, élaborer une <b>stratégie d'entreprise</b> efficace s'avère être le bouclier ultime pour prospérer et évoluer. Scruter l'environnement commercial, articuler une vision audacieuse et mobiliser les acteurs clés sont autant de pièces maîtresses dans la construction de cette feuille de route. Cet article explore en profondeur les éléments fondamentaux nécessaires à la création d'une stratégie d'entreprise robuste, dévoilant les secrets qui propulsent les organisations vers le succès à long terme. De la flexibilité à l'innovation continue, découvrez comment votre entreprise peut non seulement s'adapter, mais également prospérer dans un paysage commercial en perpétuelle évolution.</p>
-            <a class="read-more" href="strategie.html">Lire l'article complet</a>
+            <a class="read-more" href="strategie.html">Lire l'article</a>
         </div>
     </div>
     </div>
