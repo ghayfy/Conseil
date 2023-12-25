@@ -1369,53 +1369,21 @@
     }
     
   
-/* Ajoutez ces styles à la fin de votre feuille de style existante */
+    @media screen and (max-width: 1080px) {
+      .header h1 {
+        margin-top: 2vw; /* Déplace le bloc vers le haut */
+    }
+   /* Ajustez la taille de la police pour le slogan dans le header */
+    .header p {
+        font-size: 1.2vw; /* Ajustez la taille selon vos préférences */
+        margin-top: 3vw; /* Déplace le bloc vers le bas de 220px */
+    }
 
-/* iPhone 12 Pro Max, iPhone 13 Pro Max, iPhone 14 Plus */
-@media only screen 
-    and (device-width: 428px) 
-    and (device-height: 926px)
-    and (-webkit-device-pixel-ratio: 3) {
-  .heading {
-    font-size: 2rem;
-  }
-
-  .sub-heading {
-    font-size: 1.5rem;
-  }
-
-  nav a {
-    font-size: 12px;
-    padding: 8px 12px;
-  }
-
-  .intro__heading {
-    font-size: 2.5rem;
-    margin-top: -30px;
-  }
-
-  .intro__text {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .intro__sub-heading {
-    font-size: 1.2rem;
-  }
-
-  .contact-button {
-    font-size: 14px;
-    padding: 5px 15px;
-  }
-}
-
-/* Styles spécifiques pour iPhone 14 Plus */
-@media only screen 
-    and (device-width: 428px) 
-    and (device-height: 926px)
-    and (-webkit-device-pixel-ratio: 3) 
-    and (orientation: landscape) {
-  .intro__text {
-    width: 70%;
-  }
-}
+    .logo img {
+        margin-top: 0vw; /* Déplace le bloc vers le bas de 220px */
+    }
+    .logo img {
+        max-width: 250px; /* Ajustez la taille du logo selon vos besoins */
+    }
+    
+    }
