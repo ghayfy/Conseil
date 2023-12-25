@@ -358,7 +358,7 @@
     -webkit-animation: s_scroll 10s linear infinite;
     animation: s_scroll 10s linear infinite;
     display: flex;
-    width: calc(250px * 16); /* 8 logos à afficher, donc multiplier par 16 */
+    width: calc(250px * 20); /* 8 logos à afficher, donc multiplier par 16 */
   }
   
   .slider .slide {
@@ -371,8 +371,7 @@
     height: 100%;
     object-fit: contain;
   }
-  
-  
+
   
   /* Partie formulaire de contact */
   /* Ajoutez cette classe pour créer une grille */
@@ -1297,76 +1296,126 @@
   @media screen and (min-width: 320px) and (max-width: 768px) {
   
   
-    .img__heading {
-      top: 25%;
-      width: 100%;
-      text-transform: uppercase;
-      font-size: 1.7rem;
-      letter-spacing: 0.5rem;
+      .img__heading {
+        top: 25%;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        letter-spacing: 0.5rem;
+      }
+    
+      .intro__text {
+        width: 100%;
+        margin: 1rem 0 0 0;
+        border-radius: 0px;
+      }
+    
+      .intro__heading {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+    
+      .intro__text-heading {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+    
+      .box-1,
+      .box-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        clip-path: polygon(100% 0, 100% 100%, 0 95%, 0 5%);
+        padding-bottom: 1.5rem;
+      }
+    
+      .box-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        clip-path: polygon(100% 5%, 100% 95%, 0 100%, 0 0%);
+        padding-bottom: 1.5rem;
+      }
+    
+      .box__text {
+        min-width: 100%;
+      }
+    
+      .contact {
+        height: 630px;
+        font-size: 1.3rem;
+      }
+    
+      .contact__info {
+        padding: 1rem;
+      }
+    
+      .contact__info-heading {
+        font-size: 2rem;
+      }
+      .footer__top {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer__bottom {
+        padding: 0.8rem;
+      }
+      footer svg {
+        top: -4rem;
+        height: 65px;
+      }
     }
+    
   
-    .intro__text {
-      width: 100%;
-      margin: 1rem 0 0 0;
-      border-radius: 0px;
-    }
-  
-    .intro__heading {
-      font-size: 2.5rem;
-      text-align: center;
-      padding-bottom: 1rem;
-    }
-  
-    .intro__text-heading {
-      font-size: 1.5rem;
-      text-align: center;
-      padding-bottom: 1rem;
-    }
-  
-    .box-1,
-    .box-3 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      clip-path: polygon(100% 0, 100% 100%, 0 95%, 0 5%);
-      padding-bottom: 1.5rem;
-    }
-  
-    .box-2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      clip-path: polygon(100% 5%, 100% 95%, 0 100%, 0 0%);
-      padding-bottom: 1.5rem;
-    }
-  
-    .box__text {
-      min-width: 100%;
-    }
-  
-    .contact {
-      height: 630px;
-      font-size: 1.3rem;
-    }
-  
-    .contact__info {
-      padding: 1rem;
-    }
-  
-    .contact__info-heading {
-      font-size: 2rem;
-    }
-    .footer__top {
-      flex-direction: column;
-      text-align: center;
-    }
-    .footer__bottom {
-      padding: 0.8rem;
-    }
-    footer svg {
-      top: -4rem;
-      height: 65px;
-    }
+/* Ajoutez ces styles à la fin de votre feuille de style existante */
+
+/* iPhone 12 Pro Max, iPhone 13 Pro Max, iPhone 14 Plus */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px)
+    and (-webkit-device-pixel-ratio: 3) {
+  .heading {
+    font-size: 2rem;
   }
-  
-  
+
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .intro__heading {
+    font-size: 2.5rem;
+    margin-top: -30px;
+  }
+
+  .intro__text {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .intro__sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .contact-button {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+}
+
+/* Styles spécifiques pour iPhone 14 Plus */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px)
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: landscape) {
+  .intro__text {
+    width: 70%;
+  }
+}
