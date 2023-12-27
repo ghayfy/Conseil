@@ -124,8 +124,38 @@
             font-weight: 400;
             text-transform: uppercase;
             color: #085e79;
-            margin: .5rem 0 2rem;
+            margin: 0.5rem 0 1rem; /* Ajustez la marge supérieure selon vos préférences */
         }
+        
+        .content-text p.highlighted-source {
+            background-color: #f4f4f4; /* Couleur de fond gris clair */
+            color: #333; /* Couleur du texte */
+            font-weight: bold; /* Texte en gras pour plus de visibilité */
+            padding: 10px; /* Espace autour du texte */
+            border: 1px solid #ddd; /* Bordure légère pour une délimitation subtile */
+            border-radius: 5px; /* Coins arrondis */
+            display: inline-block; /* Éléments en ligne avec la possibilité de définir la largeur */
+            margin: 10px 0; /* Marge supplémentaire pour améliorer l'espacement */
+        }
+
+        .content-text h5.highlighted-phone {
+            background-color: #085e79; /* Couleur de fond verte */
+            color: #fff; /* Couleur du texte en blanc */
+            font-weight: bold; /* Texte en gras pour plus de visibilité */
+            padding: 10px; /* Espace autour du texte */
+            border: 1px solid #4CAF50; /* Bordure assortie à la couleur de fond */
+            border-radius: 5px; /* Coins arrondis */
+            display: inline-block; /* Éléments en ligne avec la possibilité de définir la largeur */
+            margin: 10px 0; /* Marge supplémentaire pour améliorer l'espacement */
+        }
+        
+
+        h5 {
+            font-size: 18px;
+    
+            color: #085e79;
+    
+          }
 
         .content-text .content-paragraph {
             font-size: 1.1rem;
@@ -149,28 +179,48 @@
         .content-text .btn:hover {
             background-color: #064c63;
         }
-          /* Nouveaux styles pour les boutons */
-    .contact-button-container {
-        margin-top: 50px;  /* Ajustez la valeur de margin-top selon vos besoins pour déplacer le bouton verticalement */
-    }
-    
-    .contact-button {
-        background-color: #085e79;
-        color: #fff;
-        font-size: 16px;
-        padding: 5px 20px;
-        border: none;
-        cursor: pointer;
-        border-radius: 10px;
-        transition: background-color 0.3s ease-in-out;
-        text-decoration: none; /* Empêche le surlignement du lien */
-        display: inline-block; /* Permet d'appliquer le margin-top au conteneur */
-    }
-    
-    .contact-button:hover {
-        background-color: grey; /* Changement de couleur au survol */
-    }
-    
+
+
+        .results-list {
+            list-style-type: none;
+            padding: 0;
+          }
+          .results-list li {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 10px;
+            padding-left: 20px; /* Ajout de marge à gauche */
+          }
+          .icon {
+            margin-right: 5px;
+            color: #085e79;
+
+          }
+
+
+        /* Nouveaux styles pour les boutons */
+        .contact-button-container {
+            margin-top: 50px;  /* Ajustez la valeur de margin-top selon vos besoins pour déplacer le bouton verticalement */
+        }
+        
+        .contact-button {
+            background-color: #085e79;
+            color: #fff;
+            font-size: 16px;
+            padding: 5px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s ease-in-out;
+            text-decoration: none; /* Empêche le surlignement du lien */
+            display: inline-block; /* Permet d'appliquer le margin-top au conteneur */
+        }
+        
+        .contact-button:hover {
+            background-color: grey; /* Changement de couleur au survol */
+        }
+        
 
         /* Nouveau style pour le footer */
         footer {
