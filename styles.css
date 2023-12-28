@@ -1451,6 +1451,20 @@
     }
   }
 
+  footer {
+    width: 100%;
+        }
+  nav a {
+    font-size: 10px;
+        }
+  
+          /* Nouveaux styles pour la navigation */
+      nav {
+
+        width: 97%;
+
+    }
+
     /* CSS pour les écrans avec une hauteur maximale de 2400px */
     @media only screen and (max-height: 2400px) {
         /* Vous pouvez ajouter ici des styles spécifiques pour les écrans avec une hauteur maximale de 2400px */
