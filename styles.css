@@ -40,49 +40,50 @@
     padding-bottom: 1rem;
   }
   
-      /* Nouveaux styles pour la navigation */
-      nav {
-        background-color: #085e79;
-        padding: 15px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 5000;
-        opacity: 0.9;
-    }
-  
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-  
-    nav li {
-        display: inline-block;
-        margin-right: 20px; /* Espacement plus large entre les éléments */
-    }
-  
-    nav a {
-        text-decoration: none;
-        color: #085e79; /* Couleur du texte dans la navigation */
-        background-color: #fff;
-        font-weight: bold;
-        font-size: 13px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: color 0.3s ease-in-out;
-        padding: 10px 15px;
-        border-radius: 5px;
-    }
-    nav a:hover {
-        background-color: grey; /* Ajout d'une couleur de fond au survol */
-        color: #073f50; /* Changement de couleur au survol */
-    }
-    
+/* Nouveaux styles pour la navigation */
+nav {
+  background-color: #085e79;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5000;
+  opacity: 0.9;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #085e79;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #fff; /* Nouvelle propriété pour l'arrière-plan rouge */
+}
+
+nav a:hover {
+  background-color: grey;
+  color: #073f50;
+}
+
     
   /* Intro */
   
@@ -1458,12 +1459,7 @@
     font-size: 10px;
         }
   
-          /* Nouveaux styles pour la navigation */
-      nav {
 
-        width: 97%;
-
-    }
 
     /* CSS pour les écrans avec une hauteur maximale de 2400px */
     @media only screen and (max-height: 2400px) {
