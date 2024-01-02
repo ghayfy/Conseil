@@ -360,7 +360,7 @@ nav a:hover {
     -webkit-animation: s_scroll 10s linear infinite;
     animation: s_scroll 10s linear infinite;
     display: flex;
-    width: calc(250px * 20); /* 8 logos à afficher, donc multiplier par 16 */
+    width: calc(250px * 24); /* 8 logos à afficher, donc multiplier par 16 */
   }
   
   .slider .slide {
