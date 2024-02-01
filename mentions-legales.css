@@ -217,7 +217,7 @@
         }
         
         #contact-form {
-            background: url('./public/contact.png') center/cover no-repeat;
+            background: url('./public/contact.webp') center/cover no-repeat;
             padding: 50px 0;
             text-align: center;
             color: #fff; /* Ajoutez la couleur de texte souhaitée, par exemple, blanc (#ffffff) */
