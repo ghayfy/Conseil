@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Initialisation des blocs et des animations de survol
   const blocks = document.querySelectorAll('.block');
-
   blocks.forEach((block) => {
       const img = block.querySelector('img');
       const title = block.querySelector('.centered-title');
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
           img.style.transform = 'scale(1)';
       });
 
-      // Ajout d'une gestionnaire d'événements pour le cas où la souris est sur le titre
       title.addEventListener('mouseenter', function () {
           img.style.transform = 'scale(1.1)';
       });
@@ -22,88 +21,47 @@ document.addEventListener('DOMContentLoaded', function () {
           img.style.transform = 'scale(1)';
       });
   });
-});
 
+  // Ajustement de la taille des titres
+  adjustTitleSizes();
 
-  // Fonction pour ajuster les tailles des titres
-  function adjustTitleSizes() {
-    const titles = document.querySelectorAll(".block h2");
-    let maxHeight = 0;
-
-    // Réinitialisez la hauteur pour les titres
-    titles.forEach((title) => {
-      title.style.height = "auto";
-    });
-
-    // Trouvez la hauteur maximale parmi les titres
-    titles.forEach((title) => {
-      maxHeight = Math.max(maxHeight, title.offsetHeight);
-    });
-
-    // Appliquez la hauteur maximale à tous les titres
-    titles.forEach((title) => {
-      title.style.height = `${maxHeight}px`;
-      title.style.backgroundColor = "white";
-    });
-  }
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    adjustTitleSizes(); // Appel initial pour ajuster les tailles au chargement de la page
+  // Partie formulaire de contact
+  // Vous pouvez ajouter votre logique de soumission de formulaire ici
 });
 
 // Fonction pour ajuster les tailles des titres
 function adjustTitleSizes() {
-    const titles = document.querySelectorAll(".block h2");
-    let maxHeight = 0;
+  const titles = document.querySelectorAll(".block h2");
+  let maxHeight = 0;
 
-    // Réinitialisez la hauteur pour les titres
-    titles.forEach((title) => {
-        title.style.height = "auto";
-    });
+  titles.forEach((title) => {
+      title.style.height = "auto";
+  });
 
-    // Trouvez la hauteur maximale parmi les titres
-    titles.forEach((title) => {
-        maxHeight = Math.max(maxHeight, title.offsetHeight);
-    });
+  titles.forEach((title) => {
+      maxHeight = Math.max(maxHeight, title.offsetHeight);
+  });
 
-    // Appliquez la hauteur maximale à tous les titres
-    titles.forEach((title) => {
-        title.style.height = `${maxHeight}px`;
-        title.style.backgroundColor = "white";
-    });
+  titles.forEach((title) => {
+      title.style.height = `${maxHeight}px`;
+      title.style.backgroundColor = "white";
+  });
 }
 
+function submitForm() {
+  const formMessage = document.getElementById('formMessage');
+  formMessage.innerHTML = 'Votre message a été envoyé avec succès!';
+  formMessage.style.color = '#0a804a'; // Couleur verte pour le succès
+  resetForm();
+}
 
+function resetForm() {
+  document.getElementById('contactForm').reset();
+}
 
-document.addEventListener("DOMContentLoaded", function () {
-  adjustTitleSizes(); // Appel initial pour ajuster les tailles au chargement de la page
+$(document).ready(function() {
+  var timer = 4000;
+  var i = 0;
+  var max = $('#c > li').length;
+  // Ajoutez ici votre logique pour le carousel ou autre
 });
-
-
-
-
-
-//partie formulaire de contact
-    function submitForm() {
-        // You can add your form submission logic here
-        // For demonstration purposes, let's display a success message
-        const formMessage = document.getElementById('formMessage');
-        formMessage.innerHTML = 'Votre message a été envoyé avec succès!';
-        formMessage.style.color = '#0a804a'; // Green color for success
-        resetForm();
-    }
-
-    function resetForm() {
-        // You can add logic to reset form fields if needed
-        document.getElementById('contactForm').reset();
-    }
-
-    $(document).ready(function() {
-      var timer = 4000;
-      var i = 0;
-      var max = $('#c > li').length;
-      
-  });
-  
