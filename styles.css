@@ -17,10 +17,68 @@
     margin: 0;
   }
   
-  body {
+  .expertise-container {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+#expertises h2 {
+    font-size: 38px;
+    color: #085e79; /* Couleur principale */
+    margin: 40px 0 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#expertises > p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff; /* Texte en blanc pour un contraste fort */
+    margin-bottom: 40px;
+    padding: 25px;
+    background: linear-gradient(145deg, #085e79, #4d1d37); /* Gradient cohérent avec l'introduction */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    text-align: center;
     line-height: 1.6;
-    font-family: 'Roboto', sans-serif; /* Utilisez la police que vous souhaitez tester */
-  }
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.expertise-detail {
+    background: linear-gradient(145deg, #4d1d37, #085e79); /* Gradient inversé pour les détails */
+    color: #ffffff; /* Texte en blanc pour les détails */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    text-align: left;
+    border-left: 5px solid #ebf5ff; /* Bordure claire pour contraster */
+}
+
+.expertise-detail h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.expertise-detail p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
   
   span {
     color: var(--accent-dark);

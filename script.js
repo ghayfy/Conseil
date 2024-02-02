@@ -65,3 +65,25 @@ $(document).ready(function() {
   var max = $('#c > li').length;
   // Ajoutez ici votre logique pour le carousel ou autre
 });
+
+
+
+function toggleDetail(section) {
+  const detailText = document.getElementById('detailText');
+  let content = '';
+
+  switch (section) {
+      case 'domaines':
+          content = '<h4>Domaines d’intervention</h4><p>Détaillez ici vos domaines d’intervention...</p>';
+          break;
+      case 'secteurs':
+          content = '<h4>Secteurs d’activité</h4><p>Détaillez ici les secteurs d’activité...</p>';
+          break;
+      case 'references':
+          content = '<h4>Nos Références</h4><p>Détaillez ici quelques-unes de vos références...</p>';
+          break;
+  }
+
+  detailText.innerHTML = content;
+  detailText.style.display = 'block';
+}
