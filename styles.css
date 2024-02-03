@@ -1,7 +1,6 @@
 
-
    /* Variables */
-:root {
+   :root {
     --background-light: #98c1d9;
     --background-dark: #293241;
     --text-light: #98c1d9;
@@ -154,7 +153,7 @@ nav a:hover {
   
   
   .intro {
-    background-image: url("./public/bureau.webp");
+    background-image: url("./public/bureau.png");
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -338,7 +337,7 @@ nav a:hover {
   
   /* Image Scroll Section */
   .img-scroll {
-    background-image: url("./public/scroll.webp");
+    background-image: url("./public/scroll.png");
     min-height: 350px;
     background-size: cover;
     background-position: center;
@@ -531,7 +530,7 @@ nav a:hover {
   }
   
   #contact-form {
-    background: url('./public/contact.webp') center/cover no-repeat;
+    background: url('./public/contact.png') center/cover no-repeat;
     padding: 50px 0;
     text-align: center;
     color: #fff; /* Ajoutez la couleur de texte souhaitée, par exemple, blanc (#ffffff) */
