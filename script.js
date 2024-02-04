@@ -87,3 +87,5 @@ function toggleDetail(section) {
   detailText.innerHTML = content;
   detailText.style.display = 'block';
 }
+
+
