@@ -141,8 +141,6 @@ nav a:hover {
 
 /* Partie SERVICES */
 
-
-/* services */
 .titre-services {
   text-align: center;
   /* Centre le texte horizontalement */
@@ -212,54 +210,6 @@ nav a:hover {
 .block:hover h2 {
   color: #d5d9db;
   /* Changement de couleur au survol */
-}
-
-/* Responsive pour les tablettes */
-@media (max-width: 768px) {
-  .block {
-    width: calc(50% - 20px);
-    /* Affiche deux éléments par ligne au lieu de trois */
-    margin-bottom: 20px;
-    /* Ajoute de l'espace entre les lignes */
-  }
-}
-
-/* Responsive pour les smartphones */
-@media (max-width: 480px) {
-  .titre-services {
-    font-size: 30px;
-    /* Réduit la taille du titre pour les petits écrans */
-  }
-
-  .block {
-    width: 100%;
-    /* Affiche les éléments en pleine largeur */
-    margin-bottom: 20px;
-    /* Ajoute de l'espace entre les éléments */
-  }
-
-  .block h2 {
-    font-size: 20px;
-    /* Ajuste la taille de la police pour les titres à l'intérieur des blocs */
-  }
-}
-
-
-/* Réactivité */
-@media (max-width: 768px) {
-  .section-services .block {
-    width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .section-services .block {
-    width: 100%;
-  }
-
-  .section-services .titre-services {
-    font-size: 2rem;
-  }
 }
 
 
@@ -507,8 +457,8 @@ nav a:hover {
 }
 
 
-
 /* Partie formulaire de contact */
+
 /* Ajoutez cette classe pour créer une grille */
 .grid {
   display: grid;
@@ -625,7 +575,6 @@ nav a:hover {
   /* Nécessaire pour positionner le calque d'ombre */
 }
 
-
 #contact-form::before {
   content: '';
   /* Contenu vide nécessaire pour créer un pseudo-élément */
@@ -644,7 +593,6 @@ nav a:hover {
   margin-top: 20px;
 }
 
-
 .container-grille {
   height: 100vh;
   width: 100%;
@@ -652,6 +600,18 @@ nav a:hover {
   grid-template-columns: 200px 1fr 200px;
   grid-template-rows: auto 1fr auto;
 }
+
+.contact-title {
+  color: #085e79;
+  /* La couleur blanche pour contraster avec le fond sombre */
+  font-size: 32px;
+  /* Une taille de police appropriée pour le titre de la section */
+  margin-bottom: 30px;
+  /* Espace avant le début du formulaire */
+  text-align: center;
+  /* Assurez-vous que le titre est centré */
+}
+
 
 /* Nouveau style pour le footer */
 footer {
@@ -707,15 +667,59 @@ footer a:hover {
 }
 
 
-
 /****************************************************************************/
-
-
-
 
 /****************************************************************************/
 
 /****************************************************************************/
+
+/* Responsive pour les tablettes */
+@media (max-width: 768px) {
+  .block {
+    width: calc(50% - 20px);
+    /* Affiche deux éléments par ligne au lieu de trois */
+    margin-bottom: 20px;
+    /* Ajoute de l'espace entre les lignes */
+  }
+}
+
+/* Responsive pour les smartphones */
+@media (max-width: 480px) {
+  .titre-services {
+    font-size: 30px;
+    /* Réduit la taille du titre pour les petits écrans */
+  }
+
+  .block {
+    width: 100%;
+    /* Affiche les éléments en pleine largeur */
+    margin-bottom: 20px;
+    /* Ajoute de l'espace entre les éléments */
+  }
+
+  .block h2 {
+    font-size: 20px;
+    /* Ajuste la taille de la police pour les titres à l'intérieur des blocs */
+  }
+}
+
+
+/* Réactivité */
+@media (max-width: 768px) {
+  .section-services .block {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .section-services .block {
+    width: 100%;
+  }
+
+  .section-services .titre-services {
+    font-size: 2rem;
+  }
+}
 
 /****************************************************************************/
 
@@ -1105,18 +1109,6 @@ footer a:hover {
     border-radius: 12px;
   }
 
-  .centered-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #333;
-    z-index: 2;
-    width: 100%;
-    /* Assurez-vous que le titre occupe toute la largeur du parent */
-  }
-
   .block h2 {
     font-size: 20px;
     /* Ajustez la taille du titre pour l'iPhone SE */
@@ -1181,18 +1173,6 @@ footer a:hover {
   .contact-container {
     max-width: 300px;
     margin: 0 auto;
-  }
-
-  #contact-form form .checkbox-text {
-    font-family: 'Arial', sans-serif;
-    /* Utilise une police plus professionnelle */
-    line-height: 1.2;
-    /* Augmente l'espacement entre les lignes pour une meilleure lisibilité */
-    font-size: 12px;
-    text-align: left;
-    /* Aligne le texte à gauche */
-    margin-left: -10px;
-    /* ajustez cette valeur selon vos besoins */
   }
 
   #contact-form form .checkbox-label {
