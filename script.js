@@ -2,24 +2,24 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialisation des blocs et des animations de survol
   const blocks = document.querySelectorAll('.block');
   blocks.forEach((block) => {
-      const img = block.querySelector('img');
-      const title = block.querySelector('.centered-title');
+    const img = block.querySelector('img');
+    const title = block.querySelector('.centered-title');
 
-      block.addEventListener('mouseenter', function () {
-          img.style.transform = 'scale(1.1)';
-      });
+    block.addEventListener('mouseenter', function () {
+      img.style.transform = 'scale(1.1)';
+    });
 
-      block.addEventListener('mouseleave', function () {
-          img.style.transform = 'scale(1)';
-      });
+    block.addEventListener('mouseleave', function () {
+      img.style.transform = 'scale(1)';
+    });
 
-      title.addEventListener('mouseenter', function () {
-          img.style.transform = 'scale(1.1)';
-      });
+    title.addEventListener('mouseenter', function () {
+      img.style.transform = 'scale(1.1)';
+    });
 
-      title.addEventListener('mouseleave', function () {
-          img.style.transform = 'scale(1)';
-      });
+    title.addEventListener('mouseleave', function () {
+      img.style.transform = 'scale(1)';
+    });
   });
 
   // Ajustement de la taille des titres
@@ -35,16 +35,16 @@ function adjustTitleSizes() {
   let maxHeight = 0;
 
   titles.forEach((title) => {
-      title.style.height = "auto";
+    title.style.height = "auto";
   });
 
   titles.forEach((title) => {
-      maxHeight = Math.max(maxHeight, title.offsetHeight);
+    maxHeight = Math.max(maxHeight, title.offsetHeight);
   });
 
   titles.forEach((title) => {
-      title.style.height = `${maxHeight}px`;
-      title.style.backgroundColor = "white";
+    title.style.height = `${maxHeight}px`;
+    title.style.backgroundColor = "white";
   });
 }
 
@@ -59,7 +59,7 @@ function resetForm() {
   document.getElementById('contactForm').reset();
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   var timer = 4000;
   var i = 0;
   var max = $('#c > li').length;
@@ -73,15 +73,15 @@ function toggleDetail(section) {
   let content = '';
 
   switch (section) {
-      case 'domaines':
-          content = '<h4>Domaines d’intervention</h4><p>Détaillez ici vos domaines d’intervention...</p>';
-          break;
-      case 'secteurs':
-          content = '<h4>Secteurs d’activité</h4><p>Détaillez ici les secteurs d’activité...</p>';
-          break;
-      case 'references':
-          content = '<h4>Nos Références</h4><p>Détaillez ici quelques-unes de vos références...</p>';
-          break;
+    case 'domaines':
+      content = '<h4>Domaines d’intervention</h4><p>Détaillez ici vos domaines d’intervention...</p>';
+      break;
+    case 'secteurs':
+      content = '<h4>Secteurs d’activité</h4><p>Détaillez ici les secteurs d’activité...</p>';
+      break;
+    case 'references':
+      content = '<h4>Nos Références</h4><p>Détaillez ici quelques-unes de vos références...</p>';
+      break;
   }
 
   detailText.innerHTML = content;

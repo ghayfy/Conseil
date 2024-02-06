@@ -1,79 +1,87 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+header {
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    /* Ajustez la hauteur selon vos besoins */
+}
 
-        header {
-            background-color: white;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 120px; /* Ajustez la hauteur selon vos besoins */
-        }
+header img {
+    width: 300px;
+    /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    /* Cela permet de conserver les proportions originales du logo */
+}
 
-        header img {
-            width: 300px; /* Ajustez la largeur selon vos besoins */
-            height: auto; /* Cela permet de conserver les proportions originales du logo */
-        }
-        
-        nav {
-            background-color: #085e79;
-            padding: 10px;
-            text-align: center;
-        }
+nav {
+    background-color: #085e79;
+    padding: 10px;
+    text-align: center;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-        nav li {
-            display: inline;
-            margin-right: 15px;
-        }
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #085e79; /* Couleur du texte dans la navigation */
-            background-color: #fff;
-            font-weight: bold;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s ease-in-out;
-            padding: 6px 11px;
-            border-radius: 5px;
-        }
+nav a {
+    text-decoration: none;
+    color: #085e79;
+    /* Couleur du texte dans la navigation */
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+    padding: 6px 11px;
+    border-radius: 5px;
+}
 
-        nav a:hover {
-            background-color: #ffcc00;
-            color: #073f50;
-        }
-  
-        .banner {
-            width: 100%;
-            max-height: 200px;
-            overflow: hidden;
-        }
+nav a:hover {
+    background-color: #ffcc00;
+    color: #073f50;
+}
 
-        .banner img {
-            width: 100%;
-            max-height: 300px; /* Ajustez la hauteur maximale selon vos besoins */
-            object-fit: cover;
-        }
+.banner {
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+}
 
-        
+.banner img {
+    width: 100%;
+    max-height: 300px;
+    /* Ajustez la hauteur maximale selon vos besoins */
+    object-fit: cover;
+}
+
+
 /* Ajoutez une classe 'mentions-legales' à la section des mentions légales */
 .mentions-legales {
-    margin: 20px; /* Ajoutez la marge désirée autour de la section des mentions légales */
-    padding: 20px; /* Ajoutez de la marge à l'intérieur de la section */
-    background-color: #f4f4f4; /* Ajoutez une couleur de fond */
-    border-radius: 8px; /* Ajoutez des coins arrondis à la section */
+    margin: 20px;
+    /* Ajoutez la marge désirée autour de la section des mentions légales */
+    padding: 20px;
+    /* Ajoutez de la marge à l'intérieur de la section */
+    background-color: #f4f4f4;
+    /* Ajoutez une couleur de fond */
+    border-radius: 8px;
+    /* Ajoutez des coins arrondis à la section */
 }
 
 /* Les règles suivantes sont ajoutées pour les éléments de texte dans la section des mentions légales */
@@ -81,328 +89,356 @@
 .mentions-legales h3,
 .mentions-legales strong,
 .mentions-legales p {
-    color: #085e79; /* Couleur spécifiée */
+    color: #085e79;
+    /* Couleur spécifiée */
 }
 
 /* Ajoutez une bordure en bas de chaque h3 */
 .mentions-legales h3 {
-    border-bottom: 2px solid #085e79; /* Augmentez l'épaisseur de la bordure */
-    padding-bottom: 10px; /* Ajoutez plus d'espace en bas du h3 */
+    border-bottom: 2px solid #085e79;
+    /* Augmentez l'épaisseur de la bordure */
+    padding-bottom: 10px;
+    /* Ajoutez plus d'espace en bas du h3 */
 }
 
 /* Style du paragraphe dans la section des mentions légales */
 .mentions-legales p {
-    line-height: 1.6; /* Augmentez l'espacement des lignes pour une meilleure lisibilité */
+    line-height: 1.6;
+    /* Augmentez l'espacement des lignes pour une meilleure lisibilité */
 }
 
 /* Style du lien dans la section des mentions légales */
 .mentions-legales a {
-    color: #ffcc00; /* Couleur du lien */
-    text-decoration: underline; /* Soulignez les liens */
+    color: #ffcc00;
+    /* Couleur du lien */
+    text-decoration: underline;
+    /* Soulignez les liens */
 }
 
 /* Mettez en forme la liste avec des puces */
 .mentions-legales li {
-    list-style: disc inside; /* Utilisez des puces et ajustez l'espacement */
-    margin-bottom: 8px; /* Ajoutez de l'espace entre les éléments de liste */
+    list-style: disc inside;
+    /* Utilisez des puces et ajustez l'espacement */
+    margin-bottom: 8px;
+    /* Ajoutez de l'espace entre les éléments de liste */
 }
 
 
-        .read-more {
-            display: block;
-            text-align: right;
-            color: #420c4d;
-            text-decoration: none;
-        }
+.read-more {
+    display: block;
+    text-align: right;
+    color: #420c4d;
+    text-decoration: none;
+}
 
-        .read-more:hover {
-            text-decoration: underline;
-        }
+.read-more:hover {
+    text-decoration: underline;
+}
 
-                /* Partie formulaire de contact */
-        /* Ajoutez cette classe pour créer une grille */
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        
-        /* Partie formulaire de contact */
-        #contact-form {
-            background-color: #f4f4f4;
-            padding: 50px 0;
-            text-align: center;
-        }
-        
-        .contact-container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        #contact-form h2 {
-            background-color: #fff;
-            font-size: 28px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-        
-        #contact-form form {
-            display: grid;
-            gap: 20px;
-        }
-        
-        .form-group {
-            position: relative;
-        }
-        
-        #contact-form input,
-        #contact-form select,
-        #contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-        
-        #contact-form select {
-            appearance: none;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path d="M1 5l7 7 7-7H1z"/></svg>');
-            background-repeat: no-repeat;
-            background-position: right 10px top 50%;
-        }
-        
-        #contact-form button {
-            background-color: #fff;
-            color: #085e79;
-            padding: 18px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-            font-size: 18px;
-        }
-        
-        #contact-form button:hover {
-            background-color: grey;
-        }
-        
-        #formMessage {
-            margin-top: 20px;
-            font-size: 16px;
-            color: #28a745;
-        }
-        
-            /* ... case à cocher  ... */
-        
-        #contact-form form .checkbox-label {
-            display: flex;
-            align-items: flex-start; /* aligne le haut de la case à cocher avec le haut du texte */
-            margin-left: -90px; /* ajustez cette valeur selon vos besoins */
-        
-        }
-        
-        #contact-form form .checkbox-text {
-            margin: 0; /* supprime toute marge autour du texte */
-            margin-left: -90px; /* ajustez cette valeur selon vos besoins */
-            font-family: Arial, sans-serif; /* utilise une police plus professionnelle */
-            line-height: 1.5; /* augmente l'espacement entre les lignes pour une meilleure lisibilité */
-            color: #0a2831; /* Couleur du texte */
-            position: relative; /* Permet de positionner le texte au-dessus du pseudo-élément */
-            z-index: 1; /* Place le texte au-dessus du pseudo-élément */
-            font-size: 18px;
-            text-align: left; /* Aligne le texte à gauche */
-        }
-        
-        #contact-form {
-            background: url('./public/contact.png') center/cover no-repeat;
-            padding: 50px 0;
-            text-align: center;
-            color: #fff; /* Ajoutez la couleur de texte souhaitée, par exemple, blanc (#ffffff) */
-            position: relative; /* Nécessaire pour positionner le calque d'ombre */
-        }
-        
-        
-        #contact-form::before {
-            content: ''; /* Contenu vide nécessaire pour créer un pseudo-élément */
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent noir */
-            z-index: -1; /* Place le pseudo-élément en dessous du contenu principal */
-        }
-        
-        .contact-info {
-            margin-top: 20px;
-        }
-        
-        
-        .container-grille {
-            height: 100vh;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 200px 1fr 200px;
-            grid-template-rows: auto 1fr auto;
-        }
+/* Partie formulaire de contact */
+/* Ajoutez cette classe pour créer une grille */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Partie formulaire de contact */
+#contact-form {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form h2 {
+    background-color: #fff;
+    font-size: 28px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#contact-form form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#contact-form select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path d="M1 5l7 7 7-7H1z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+}
+
+#contact-form button {
+    background-color: #fff;
+    color: #085e79;
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+#contact-form button:hover {
+    background-color: grey;
+}
+
+#formMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #28a745;
+}
+
+/* ... case à cocher  ... */
+
+#contact-form form .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    /* aligne le haut de la case à cocher avec le haut du texte */
+    margin-left: -90px;
+    /* ajustez cette valeur selon vos besoins */
+
+}
+
+#contact-form form .checkbox-text {
+    margin: 0;
+    /* supprime toute marge autour du texte */
+    margin-left: -90px;
+    /* ajustez cette valeur selon vos besoins */
+    font-family: Arial, sans-serif;
+    /* utilise une police plus professionnelle */
+    line-height: 1.5;
+    /* augmente l'espacement entre les lignes pour une meilleure lisibilité */
+    color: #0a2831;
+    /* Couleur du texte */
+    position: relative;
+    /* Permet de positionner le texte au-dessus du pseudo-élément */
+    z-index: 1;
+    /* Place le texte au-dessus du pseudo-élément */
+    font-size: 18px;
+    text-align: left;
+    /* Aligne le texte à gauche */
+}
+
+#contact-form {
+    background: url('./public/contact.png') center/cover no-repeat;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    /* Ajoutez la couleur de texte souhaitée, par exemple, blanc (#ffffff) */
+    position: relative;
+    /* Nécessaire pour positionner le calque d'ombre */
+}
 
 
+#contact-form::before {
+    content: '';
+    /* Contenu vide nécessaire pour créer un pseudo-élément */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fond semi-transparent noir */
+    z-index: -1;
+    /* Place le pseudo-élément en dessous du contenu principal */
+}
+
+.contact-info {
+    margin-top: 20px;
+}
 
 
-        /* Nouveau style pour le footer */
-        footer {
-            background-color: #073f50;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer p {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        footer a {
-            text-decoration: none;
-            color: white;
-            margin: 0 15px;
-            transition: color 0.3s ease-in-out;
-        }
-
-        footer a:hover {
-            color: #ffcc00; /* Changement de couleur au survol */
-        }
-
-        .social-icons {
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 24px;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .social-icons a:hover {
-            color: #0e76a8 ; /* Changement de couleur au survol */
-        }
+.container-grille {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+}
 
 
-        .contact-info {
-            margin-top: 20px;
-            font-size: 12px;
-        }
-        .contact-info p{
-            font-size: 13px;
-        }
 
 
-        @media only screen and (max-width: 600px) {
+/* Nouveau style pour le footer */
+footer {
+    background-color: #073f50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
-            header img {
-                display: block;
-                margin: 0 auto; /* Centre le logo horizontalement */
-            }
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
-            nav {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                z-index: 1;
-            }
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
 
-            nav.show {
-                display: flex;
-            }
+footer a:hover {
+    color: #ffcc00;
+    /* Changement de couleur au survol */
+}
 
-     
-            nav a {
-                float: none;
-                width: 100%;
-                box-sizing: border-box;
-            }
-            footer {
-                padding: 10px;
-                width: 100%;
-            }
-            footer p {
-                font-size: 12px;
-                margin-bottom: 10px;
-                }
-            }
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #0e76a8;
+    /* Changement de couleur au survol */
+}
 
 
-        /* Media query pour les écrans de 375px x 667px */
-        @media (min-width: 375px) and (max-height: 667px) {
-    
-            }
-            footer {
-                font-size: 12px;
-                width: 95%;
-                }
+.contact-info {
+    margin-top: 20px;
+    font-size: 12px;
+}
 
-        /* Media query pour les écrans de 280px x 653px */
-        @media (min-width: 280px) and (max-height: 653px) {
-    
-            }
-            footer {
-                font-size: 12px;
-                width: 120%;
-                }
+.contact-info p {
+    font-size: 13px;
+}
 
-            header img {
-                display: block;
-                margin: 0 auto; /* Centre le logo horizontalement */
-                width: 100%;
-            }
 
-            .banner {
-                width: 130%;
-                max-height: 200px;
-                overflow: hidden;
-            }
-    
-            .article-title {
-                font-size: 20px;   
-            }
- 
-               
-      /* Media query pour les écrans de 1280px x 802px */
-        @media (min-width: 1024px) and (max-height: 600px) {
+@media only screen and (max-width: 600px) {
 
-            }
+    header img {
+        display: block;
+        margin: 0 auto;
+        /* Centre le logo horizontalement */
+    }
 
-            .banner {
-                width: 100%;
-                max-height: 200px;
-                overflow: hidden;
-            }
-    
-            footer {
-                font-size: 12px;
-                width: 98%;
-                }
-        
-            header img {
-                width: 250px; /* Ajustez la largeur selon vos besoins */
-                height: auto; /* Cela permet de conserver les proportions originales du logo */
-            }    
-        /* Media query pour les écrans de 1280px x 800px */
-        @media (min-width: 1280px) and (max-height: 800px) {
-    
-            }
-            footer {
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
 
-                width: 97%;
-                }
+    nav.show {
+        display: flex;
+    }
+
+
+    nav a {
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer {
+        padding: 10px;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Media query pour les écrans de 375px x 667px */
+@media (min-width: 375px) and (max-height: 667px) {}
+
+footer {
+    font-size: 12px;
+    width: 95%;
+}
+
+/* Media query pour les écrans de 280px x 653px */
+@media (min-width: 280px) and (max-height: 653px) {}
+
+footer {
+    font-size: 12px;
+    width: 120%;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    /* Centre le logo horizontalement */
+    width: 100%;
+}
+
+.banner {
+    width: 130%;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.article-title {
+    font-size: 20px;
+}
+
+
+/* Media query pour les écrans de 1280px x 802px */
+@media (min-width: 1024px) and (max-height: 600px) {}
+
+.banner {
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+footer {
+    font-size: 12px;
+    width: 98%;
+}
+
+header img {
+    width: 250px;
+    /* Ajustez la largeur selon vos besoins */
+    height: auto;
+    /* Cela permet de conserver les proportions originales du logo */
+}
+
+/* Media query pour les écrans de 1280px x 800px */
+@media (min-width: 1280px) and (max-height: 800px) {}
+
+footer {
+
+    width: 97%;
+}

@@ -29,7 +29,8 @@
         <lastmod>2023-12-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-    </url> <url>
+    </url> 
+    <url>
         <loc>https://www.taiqo.fr/service-coaching.html</loc>
         <lastmod>2023-12-24</lastmod>
         <changefreq>monthly</changefreq>
@@ -42,36 +43,15 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.taiqo.fr/service-transformation.html</loc>
-        <lastmod>2023-12-24</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-        <url>
-        <loc>https://www.taiqo.fr/service-crise.html</loc>
-        <lastmod>2023-12-24</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-        <url>
-        <loc>https://www.taiqo.fr/service-transformation.html</loc>
-        <lastmod>2023-12-24</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-     </url>
-        <url>
         <loc>https://www.taiqo.fr/service-aeroportuaire.html</loc>
         <lastmod>2023-12-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-     </url>
-        <url>
+    <url>
         <loc>https://www.taiqo.fr/mentions-legales.html</loc>
         <lastmod>2023-12-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    <!-- Ajoutez d'autres URLs ici -->
 </urlset>
