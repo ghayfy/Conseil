@@ -1,91 +1,82 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Initialisation des blocs et des animations de survol
-  const blocks = document.querySelectorAll('.block');
-  blocks.forEach((block) => {
-    const img = block.querySelector('img');
-    const title = block.querySelector('.centered-title');
-
-    block.addEventListener('mouseenter', function () {
-      img.style.transform = 'scale(1.1)';
+// Animation lorsque la souris entre dans les images des services
+$(document).ready(function() {
+    // Animation lorsque la souris entre dans le bloc
+    $('.block').mouseenter(function() {
+        $(this).find('img').css('filter', 'brightness(1)');
     });
 
-    block.addEventListener('mouseleave', function () {
-      img.style.transform = 'scale(1)';
+    // Animation lorsque la souris quitte le bloc
+    $('.block').mouseleave(function() {
+        $(this).find('img').css('filter', 'brightness(0.6)');
     });
 
-    title.addEventListener('mouseenter', function () {
-      img.style.transform = 'scale(1.1)';
+    // Animation lorsque la souris entre dans le titre du bloc
+    $('.block h2').mouseenter(function() {
+        $(this).css('color', '#d5d9db');
     });
 
-    title.addEventListener('mouseleave', function () {
-      img.style.transform = 'scale(1)';
+    // Animation lorsque la souris quitte le titre du bloc
+    $('.block h2').mouseleave(function() {
+        $(this).css('color', '#fff');
     });
-  });
+});
 
-  // Ajustement de la taille des titres
+
+  // Ajustement de la taille des titres pour qu'ils aient tous la même hauteur
   adjustTitleSizes();
 
   // Partie formulaire de contact
   // Vous pouvez ajouter votre logique de soumission de formulaire ici
-});
+
 
 // Fonction pour ajuster les tailles des titres
 function adjustTitleSizes() {
   const titles = document.querySelectorAll(".block h2");
   let maxHeight = 0;
 
+  // Réinitialise d'abord toutes les hauteurs pour permettre le recalcul correct
   titles.forEach((title) => {
-    title.style.height = "auto";
+      title.style.height = "auto";
   });
 
+  // Calcule la hauteur maximale parmi tous les titres
   titles.forEach((title) => {
-    maxHeight = Math.max(maxHeight, title.offsetHeight);
+      maxHeight = Math.max(maxHeight, title.offsetHeight);
   });
 
+  // Applique la hauteur maximale à tous les titres pour les aligner
   titles.forEach((title) => {
-    title.style.height = `${maxHeight}px`;
-    title.style.backgroundColor = "white";
+      title.style.height = `${maxHeight}px`;
+      title.style.backgroundColor = "white";
   });
 }
 
-function submitForm() {
-  const formMessage = document.getElementById('formMessage');
-  formMessage.innerHTML = 'Votre message a été envoyé avec succès!';
-  formMessage.style.color = '#0a804a'; // Couleur verte pour le succès
-  resetForm();
-}
 
-function resetForm() {
-  document.getElementById('contactForm').reset();
-}
 
-$(document).ready(function () {
-  var timer = 4000;
-  var i = 0;
-  var max = $('#c > li').length;
-  // Ajoutez ici votre logique pour le carousel ou autre
+  // animation SLOGGANS
+document.addEventListener("DOMContentLoaded", function() {
+    const features = document.querySelectorAll(".feature");
+
+    features.forEach((feature, index) => {
+        // Animation initiale pour chaque cercle
+        const circle = feature.querySelector(".circle");
+        circle.style.opacity = 0;
+        circle.style.transform = "scale(0)";
+
+        // Délai pour l'animation de chaque feature
+        setTimeout(() => {
+            circle.style.opacity = 1;
+            circle.style.transform = "scale(1)";
+
+            // Apparition progressive du texte
+            const h2 = feature.querySelector("h2");
+            const p = feature.querySelector("p");
+            setTimeout(() => {
+                h2.style.opacity = 1;
+                h2.style.transform = "translateY(0)";
+                p.style.opacity = 1;
+                p.style.transform = "translateY(0)";
+            }, 300);
+        }, index * 300);
+    });
 });
-
-
-
-function toggleDetail(section) {
-  const detailText = document.getElementById('detailText');
-  let content = '';
-
-  switch (section) {
-    case 'domaines':
-      content = '<h4>Domaines d’intervention</h4><p>Détaillez ici vos domaines d’intervention...</p>';
-      break;
-    case 'secteurs':
-      content = '<h4>Secteurs d’activité</h4><p>Détaillez ici les secteurs d’activité...</p>';
-      break;
-    case 'references':
-      content = '<h4>Nos Références</h4><p>Détaillez ici quelques-unes de vos références...</p>';
-      break;
-  }
-
-  detailText.innerHTML = content;
-  detailText.style.display = 'block';
-}
-
-
